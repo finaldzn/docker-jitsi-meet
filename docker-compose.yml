@@ -111,6 +111,8 @@ services:
             - '5222'
             - '5347'
             - '5280'
+        ports:
+            - '5280:5280'
         volumes:
             - ${CONFIG}/prosody/config:/config:Z
             - ${CONFIG}/prosody/prosody-plugins-custom:/prosody-plugins-custom:Z
